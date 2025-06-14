@@ -1,0 +1,22 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: black;
+  color: black;
+  font-family: arial;
+  <body align="center" bgcolor="black">
+
+  <P ALIGN="center">
+    <a href=https://yeshinlee.net/About.html>
+    <img src="header.png" WIDTH="30%">
+    </a>
+
+  <p align="center" >
+    <a href="/Projects.html">PROJECTS</a> •
+    <a href="/Collage.html">COLLAGE</a> •
+    <a href="/Documentary.html">DOCUMENTARY</a>
+  
+    <HR WIDTH="80%" SIZE="5">
+}
