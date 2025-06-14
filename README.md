@@ -1,14 +1,4 @@
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
+<a style = "text-decoration: none; font-family:serif; font-size:15px; color: #444444; text-align:center;" href="https://kettlesonline.blogspot.com/"> https://kettlesonline.blogspot.com/</a><br>
+<a style = "text-decoration: none; font-family:serif; font-size:15px; color: #444444; text-align:center;" href="https://minkminkmink.com/another-night"> https://minkminkmink.com/another-night</a> <br>
+<a style = "text-decoration: none; font-family:serif; font-size:15px; color: #444444; text-align:center;" href="https://fiebach-minninger.com/tangling-in-the-coil/"> https://fiebach-minninger.com/tangling-in-the-coil/</a> <br>
+<a style = "text-decoration: none; font-family:serif; font-size:15px; color: #444444; text-align:center;" href="https://yeshin.net/The%20Wavering%20Mouth.pdf"> https://yeshin.net/The%20Wavering%20Mouth.pdf </a><br>
