@@ -13,10 +13,9 @@ body {
   padding: 2rem 1rem;
 }
 
-/* Links - stacked with tighter spacing */
 #links a {
   display: block;
-  margin: 0.2rem 0;      /* closer vertical spacing */
+  margin: 0.2rem 0;
   font-size: 15px;
   word-break: break-word;
   text-decoration: none;
@@ -42,4 +41,11 @@ body {
 #links,
 #contact {
   margin-bottom: 2rem;
+}
+
+/* Email styling */
+#contact a {
+  text-decoration: none; 
+  color: inherit;     
+  cursor: pointer;     
 }
