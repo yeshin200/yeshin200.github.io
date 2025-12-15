@@ -13,13 +13,13 @@ body {
   padding: 2rem 1rem;
 }
 
-/* Links */
-a {
-  text-decoration: none;
-  font-size: 15px;
+/* Links - stacked with tighter spacing */
+#links a {
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;      /* closer vertical spacing */
+  font-size: 15px;
   word-break: break-word;
+  text-decoration: none;
   color: #444444;
 }
 
