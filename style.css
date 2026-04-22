@@ -5,30 +5,26 @@
   padding: 0;
 }
 
+/* Base */
 body {
   background-color: #ffffff;
   font-family: serif;
   color: #444444;
   padding: 2rem;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
-/* LEFT COLUMN */
+/* Name */
 #name {
-  font-size: 15px;
   margin-bottom: 1rem;
 }
 
-/* disappears instantly */
 #name:hover {
   opacity: 0;
 }
 
+/* Links (left aligned by default) */
 #links {
-  max-width: 60%;
+  margin-bottom: 2rem;
 }
 
 #links a {
@@ -40,15 +36,13 @@ body {
   word-break: break-word;
 }
 
-/* RIGHT COLUMN */
-#rightSide {
-  text-align: right;
-}
-
+/* Image section (below links, but aligned right) */
 #imageContainer {
   width: 300px;
   height: 300px;
+  margin-left: auto;   /* pushes it to the right */
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 #myImage {
@@ -58,7 +52,13 @@ body {
   cursor: pointer;
 }
 
+/* Email (below image, aligned right) */
+#contact {
+  text-align: right;
+}
+
 #contact a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
