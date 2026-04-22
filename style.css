@@ -16,8 +16,21 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 }
+#name {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  font-size: 16px;
+  color: #444444;
+  transition: opacity 0.3s ease;
+  cursor: default;
+}
 
-/* LEFT SIDE (links) */
+/* hide on hover */
+#name:hover {
+  opacity: 0;
+}
+
 #links {
   max-width: 60%;
 }
@@ -31,7 +44,6 @@ body {
   color: #444444;
 }
 
-/* RIGHT SIDE (image + email) */
 #rightSide {
   text-align: right;
 }
