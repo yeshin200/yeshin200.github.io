@@ -1,4 +1,4 @@
-/* Reset / base */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,23 +10,19 @@ body {
   font-family: serif;
   color: #444444;
   padding: 2rem;
-  
-  /* layout */
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+
+/* LEFT COLUMN */
 #name {
-  position: fixed;
-  top: 2rem;
-  left: 2rem;
   font-size: 16px;
-  color: #444444;
-  transition: opacity 0.3s ease;
-  cursor: default;
+  margin-bottom: 1rem;
 }
 
-/* hide on hover */
+/* disappears instantly */
 #name:hover {
   opacity: 0;
 }
@@ -39,21 +35,20 @@ body {
   display: block;
   margin: 0.2rem 0;
   font-size: 15px;
-  word-break: break-word;
   text-decoration: none;
   color: #444444;
+  word-break: break-word;
 }
 
+/* RIGHT COLUMN */
 #rightSide {
   text-align: right;
 }
 
-/* Image container */
 #imageContainer {
   width: 300px;
   height: 300px;
   margin-bottom: 1rem;
-  overflow: hidden;
 }
 
 #myImage {
@@ -63,9 +58,7 @@ body {
   cursor: pointer;
 }
 
-/* Email styling */
 #contact a {
-  text-decoration: none; 
-  color: inherit;     
-  cursor: pointer;     
+  text-decoration: none;
+  color: inherit;
 }
