@@ -56,12 +56,12 @@ body {
   text-align: left;
 }
 
-#links a {
-  cursor: pointer;
-}
-
 #contact a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+#links a:hover {
+  font-style: italic;
 }
