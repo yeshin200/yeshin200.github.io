@@ -27,26 +27,29 @@
   </section>
 
   <script>
-  const imageList = [
-    'IMG_5389.JPG','IMG_5055.JPG','IMG_5532.jpg','IMG_3683.JPG','IMG_5355.JPG',
-    'IMG_4172.JPG','IMG_2420.JPG','IMG_6026.jpg','IMG_5541.jpg','IMG_6194.JPG',
-    'IMG_8205.JPG','IMG_2234.JPG','IMG_3939.JPG','IMG_9955.JPG','IMG_4914.JPG'
-  ];
+const imageList = [
+  'IMG_5389.JPG','IMG_5055.JPG','IMG_5532.jpg','IMG_3683.JPG','IMG_5355.JPG',
+  'IMG_4172.JPG','IMG_2420.JPG','IMG_6026.jpg','IMG_5541.jpg','IMG_6194.JPG',
+  'IMG_8205.JPG','IMG_2234.JPG','IMG_3939.JPG','IMG_9955.JPG','IMG_4914.JPG'
+];
 
-  let currentIndex = 0;
-  const imgElement = document.getElementById('myImage');
+let currentIndex = 0;
+const imgElement = document.getElementById('myImage');
 
-  imgElement.addEventListener('click', () => {
+imgElement.addEventListener('click', (e) => {
+  const rect = imgElement.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+
+  if (clickX < rect.width / 2) {
+    // Left half → previous image
     currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
-    imgElement.src = imageList[currentIndex];
-  });
-
-  imgElement.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-
+  } else {
+    // Right half → next image
     currentIndex = (currentIndex + 1) % imageList.length;
-    imgElement.src = imageList[currentIndex];
-  });
+  }
+
+  imgElement.src = imageList[currentIndex];
+});
   </script>
 
 </body>
