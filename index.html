@@ -33,13 +33,19 @@
       'IMG_8205.JPG','IMG_2234.JPG','IMG_3939.JPG','IMG_9955.JPG','IMG_4914.JPG'
     ];
 
-    let currentIndex = 0;
-    const imgElement = document.getElementById('myImage');
+let currentIndex = 0;
+const imgElement = document.getElementById('myImage');
 
-    imgElement.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % imageList.length;
-      imgElement.src = imageList[currentIndex];
-    });
+imgElement.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
+  imgElement.src = imageList[currentIndex];
+});
+
+imgElement.addEventListener('contextmenu', (e) => {
+  e.preventDefault(); // stops the browser right-click menu
+
+  currentIndex = (currentIndex + 1) % imageList.length;
+  imgElement.src = imageList[currentIndex];
   </script>
 
 </body>
