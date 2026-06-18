@@ -57,10 +57,12 @@ body {
 }
 
 #contact a {
+  font-size: 15px;
   text-decoration: none;
-  color: inherit;
+  color: #444444;
   cursor: pointer;
 }
+
 
 #links a:hover,
 #contact a:hover {
