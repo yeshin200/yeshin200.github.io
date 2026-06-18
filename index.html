@@ -27,25 +27,26 @@
   </section>
 
   <script>
-    const imageList = [
-      'IMG_5389.JPG','IMG_5055.JPG','IMG_5532.jpg','IMG_3683.JPG','IMG_5355.JPG',
-      'IMG_4172.JPG','IMG_2420.JPG','IMG_6026.jpg','IMG_5541.jpg','IMG_6194.JPG',
-      'IMG_8205.JPG','IMG_2234.JPG','IMG_3939.JPG','IMG_9955.JPG','IMG_4914.JPG'
-    ];
+  const imageList = [
+    'IMG_5389.JPG','IMG_5055.JPG','IMG_5532.jpg','IMG_3683.JPG','IMG_5355.JPG',
+    'IMG_4172.JPG','IMG_2420.JPG','IMG_6026.jpg','IMG_5541.jpg','IMG_6194.JPG',
+    'IMG_8205.JPG','IMG_2234.JPG','IMG_3939.JPG','IMG_9955.JPG','IMG_4914.JPG'
+  ];
 
-let currentIndex = 0;
-const imgElement = document.getElementById('myImage');
+  let currentIndex = 0;
+  const imgElement = document.getElementById('myImage');
 
-imgElement.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
-  imgElement.src = imageList[currentIndex];
-});
+  imgElement.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
+    imgElement.src = imageList[currentIndex];
+  });
 
-imgElement.addEventListener('contextmenu', (e) => {
-  e.preventDefault(); // stops the browser right-click menu
+  imgElement.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
 
-  currentIndex = (currentIndex + 1) % imageList.length;
-  imgElement.src = imageList[currentIndex];
+    currentIndex = (currentIndex + 1) % imageList.length;
+    imgElement.src = imageList[currentIndex];
+  });
   </script>
 
 </body>
