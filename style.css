@@ -63,13 +63,16 @@ body {
   cursor: pointer;
 }
 
-#soundtrack {
-  width: 150px;
-  height: 24px;
-}
-
 
 #links a:hover,
 #contact a:hover {
   font-style: italic;
 }
+
+.soundtrack {
+  width: 150px;
+  height: 24px;
+  display: block;
+  margin-top: 0.4rem;
+}
+
