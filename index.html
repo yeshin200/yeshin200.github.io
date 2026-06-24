@@ -8,9 +8,7 @@
   <link rel="icon" href="icon.png">
 </head>
 <body>
-<div id="soundButton">sound on</div>
-
-<audio id="soundtrack" loop>
+<audio controls loop id="soundtrack">
   <source src="soundtrack.m4a" type="audio/mp4">
 </audio>
 <br>
@@ -59,18 +57,6 @@ imgElement.addEventListener('click', (e) => {
   imgElement.src = imageList[currentIndex];
 });
 
-const button = document.getElementById('soundButton');
-const audio = document.getElementById('soundtrack');
-
-button.addEventListener('click', () => {
-  if (audio.paused) {
-    audio.play();
-    button.textContent = 'sound off';
-  } else {
-    audio.pause();
-    button.textContent = 'sound on';
-  }
-});
   </script>
 
 </body>
