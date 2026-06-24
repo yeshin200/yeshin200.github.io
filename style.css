@@ -69,10 +69,13 @@ body {
   font-style: italic;
 }
 
-.soundtrack {
-  width: 150px;
-  height: 24px;
+#tracks a {
   display: block;
-  margin-top: 0.4rem;
+  text-decoration: none;
+  color: #444;
+}
+
+#tracks a.active {
+  font-style: italic;
 }
 
