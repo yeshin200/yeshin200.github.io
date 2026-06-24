@@ -61,6 +61,18 @@ imgElement.addEventListener('click', (e) => {
   imgElement.src = imageList[currentIndex];
 });
 
+const players = document.querySelectorAll('audio');
+
+players.forEach(player => {
+  player.addEventListener('play', () => {
+    players.forEach(other => {
+      if (other !== player) {
+        other.pause();
+      }
+    });
+  });
+});
+    
   </script>
 
 </body>
