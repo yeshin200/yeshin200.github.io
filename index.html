@@ -8,12 +8,17 @@
   <link rel="icon" href="icon.png">
 </head>
 <body>
-<audio controls loop class="soundtrack">
-  <source src="soundtrack1.m4a" type="audio/mp4">
+<div id="tracks">
+  <a href="#" id="track1">track 1</a>
+  <a href="#" id="track2">track 2</a>
+</div>
+
+<audio id="audio1" loop>
+  <source src="track1.m4a" type="audio/mp4">
 </audio>
-<br>
-<audio controls loop class="soundtrack">
-  <source src="soundtrack2.m4a" type="audio/mp4">
+
+<audio id="audio2" loop>
+  <source src="track2.m4a" type="audio/mp4">
 </audio>
 <br>
 <br>
@@ -61,16 +66,42 @@ imgElement.addEventListener('click', (e) => {
   imgElement.src = imageList[currentIndex];
 });
 
-const players = document.querySelectorAll('audio');
+const audio1 = document.getElementById('audio1');
+const audio2 = document.getElementById('audio2');
 
-players.forEach(player => {
-  player.addEventListener('play', () => {
-    players.forEach(other => {
-      if (other !== player) {
-        other.pause();
-      }
-    });
-  });
+const track1 = document.getElementById('track1');
+const track2 = document.getElementById('track2');
+
+track1.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (audio1.paused) {
+    audio2.pause();
+
+    audio1.play();
+
+    track1.classList.add('active');
+    track2.classList.remove('active');
+  } else {
+    audio1.pause();
+    track1.classList.remove('active');
+  }
+});
+
+track2.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (audio2.paused) {
+    audio1.pause();
+
+    audio2.play();
+
+    track2.classList.add('active');
+    track1.classList.remove('active');
+  } else {
+    audio2.pause();
+    track2.classList.remove('active');
+  }
 });
     
   </script>
