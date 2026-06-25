@@ -33,9 +33,6 @@
     <a href="https://yeshin.net/Missing%20Time.pdf">Missing Time</a>
     <a href="https://youtu.be/xOL7jVpzqd0?si=XqjmdEbK2M6pob2t">Soapcatcher</a>
   </section>
-  <div id="imageContainer">
-    <img id="myImage" src="IMG_5389.JPG" alt="Flicker Image">
-  </div>
 
   <section id="contact">
     <a href="mailto:yeshinyeshinyeshin@gmail.com">yeshinyeshinyeshin@gmail.com</a>
@@ -81,29 +78,6 @@ track2.addEventListener('click', (e) => {
   }
 });
 
-const imageList = [
-  'IMG_5389.JPG','IMG_8205.JPG','IMG_5055.JPG','IMG_5532.jpg',
-  'IMG_3683.JPG','IMG_5355.JPG','IMG_4172.JPG','IMG_6026.jpg',
-  'IMG_5541.jpg','IMG_3939.JPG','IMG_9955.JPG',
-];
-
-let currentIndex = 0;
-const imgElement = document.getElementById('myImage');
-
-imgElement.addEventListener('click', (e) => {
-  const rect = imgElement.getBoundingClientRect();
-  const clickX = e.clientX - rect.left;
-
-  if (clickX < rect.width / 2) {
-    // Left half → previous image
-    currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
-  } else {
-    // Right half → next image
-    currentIndex = (currentIndex + 1) % imageList.length;
-  }
-
-  imgElement.src = imageList[currentIndex];
-});
 
     
   </script>
