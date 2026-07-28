@@ -70,11 +70,12 @@ body {
 }
 
 #tracks a {
-  display: block;
   text-decoration: none;
-  color: #444;
+  color: #444444;
+  cursor: pointer;
 }
 
+#tracks a:hover,
 #tracks a.active {
   font-style: italic;
 }
