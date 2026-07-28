@@ -34,49 +34,25 @@
     <a href="mailto:yeshinyeshinyeshin@gmail.com">yeshinyeshinyeshin@gmail.com</a>
   </section>
 
-  <script>
 
-const audio1 = document.getElementById('audio1');
-const audio2 = document.getElementById('audio2');
+<script>
+  const audio1 = document.getElementById('audio1');
+  const track1 = document.getElementById('track1');
 
-const track1 = document.getElementById('track1');
-const track2 = document.getElementById('track2');
+  track1.addEventListener('click', (e) => {
+    e.preventDefault();
 
-track1.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  if (audio1.paused) {
-    audio2.pause();
-
-    audio1.play();
-
-    track1.classList.add('active');
-    track2.classList.remove('active');
-  } else {
-    audio1.pause();
-    track1.classList.remove('active');
-  }
-});
-
-track2.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  if (audio2.paused) {
-    audio1.pause();
-
-    audio2.play();
-
-    track2.classList.add('active');
-    track1.classList.remove('active');
-  } else {
-    audio2.pause();
-    track2.classList.remove('active');
-  }
-});
+    if (audio1.paused) {
+      audio1.play();
+      track1.classList.add('active');
+    } else {
+      audio1.pause();
+      track1.classList.remove('active');
+    }
+  });
+</script>
 
 
-    
-  </script>
 
 </body>
 </html>
