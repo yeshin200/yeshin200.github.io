@@ -28,10 +28,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-#worksToggle:hover {
-  font-style: italic;
-}
-
 #links {
   display: none;
   margin-bottom: 2rem;
@@ -40,6 +36,7 @@ body {
 #links.open {
   display: block;
 }
+
 
 #links a {
   display: block;
