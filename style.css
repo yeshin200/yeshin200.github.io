@@ -26,17 +26,18 @@ body {
   cursor: pointer;
   width: fit-content;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 
 #links {
   display: none;
-  margin-bottom: 2rem;
+  position: absolute;
+  margin-top: 0.2rem;
 }
 
 #links.open {
   display: block;
 }
-
 
 #links a {
   display: block;
