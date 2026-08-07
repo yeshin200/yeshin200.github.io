@@ -20,6 +20,7 @@
 <br>
 <br>
 <br>
+  <div id="worksToggle">⁂</div>
   <section id="links">
     <a href="https://www.thepilot.site/02.html">TV Party</a>
     <a href="https://www.formafrb.dk/lulu-leika-yeshin-lee">Monday to Sunday</a>
@@ -36,6 +37,15 @@
 
 
 <script>
+
+  const worksToggle = document.getElementById('worksToggle');
+  const links = document.getElementById('links');
+
+worksToggle.addEventListener('click', () => {
+  links.classList.toggle('open');
+});
+
+  
   const audio1 = document.getElementById('audio1');
   const track1 = document.getElementById('track1');
 
