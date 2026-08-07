@@ -22,9 +22,23 @@ body {
   opacity: 0;
 }
 
-/* Links (left aligned by default) */
+#worksToggle {
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+#worksToggle:hover {
+  font-style: italic;
+}
+
 #links {
+  display: none;
   margin-bottom: 2rem;
+}
+
+#links.open {
+  display: block;
 }
 
 #links a {
@@ -36,7 +50,7 @@ body {
   word-break: break-word;
 }
 
-/* Image section (below links, but aligned right) */
+/* Image section */
 #imageContainer {
   width: 300px;
   height: 300px;
@@ -51,7 +65,7 @@ body {
   cursor: ew-resize;
 }
 
-/* Email (below image, aligned right) */
+/* Email */
 #contact {
   text-align: left;
 }
@@ -62,7 +76,6 @@ body {
   color: #444444;
   cursor: pointer;
 }
-
 
 #links a:hover,
 #contact a:hover {
