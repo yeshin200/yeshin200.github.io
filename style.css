@@ -65,7 +65,9 @@ body {
 
 /* Email */
 #contact {
-  text-align: left;
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
 }
 
 #contact a {
