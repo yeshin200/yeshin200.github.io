@@ -77,3 +77,20 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  #links a,
+  #contact a,
+  #tracks a,
+  #worksToggle {
+    font-size: 13px;
+  }
+
+  #contact {
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
